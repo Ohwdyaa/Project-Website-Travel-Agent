@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+    scroll-behavior: smooth;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(240, 237, 237, 0.75), rgba(240, 237, 237, 0.75)), url(latar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
+
+.hr{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.logo{
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 0 2rem;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    background: #1e6091;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.tombol{
+    background-color: #1e6091;
+    height: 38px;
+    line-height: 42px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.konten{
+    width: 100%;
+    position: absolute;
+    top: 70%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+}
+.konten h1{
+    font-size: 70px;
+    margin-top: 80px;
+    color: #2d343a;
+}
+.konten p{
+    color: #5d7181;
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;   
+}
+.btn{
+    padding: 100px 0;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #4c857f;
+    background: transparent;
+    color: #2d343a;
+    position: relative;
+    overflow: hidden;
+}
+button span{
+    background: #4c857f;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.about {
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.about h2{
+    color: rgb(87, 69, 69);
+    font-size: 50px;
+}
+.about h3{
+    color: rgb(72, 69, 69);
+    font-size: 27px;
+}
+.about p{
+    color: rgb(72, 69, 69);
+    font-size: 1rem;
+    line-height: 15px;
+    padding: 15px 0;
+}
+.kartu p{
+    color: white;
+}
+.a{
+    padding: 50px 0 20px 0;
+}
+
+.kartu{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.kartu1{
+    width: 500px;
+    height: 230px;
+    background-image: url(gambar/bandung.jpg);
+}
+.kartu2{
+    background-image: url(gambar/jepang.jfif);
+}
+.kartu3{
+    background-image: url(gambar/tarim.jpg);
+}
+.kartu4{
+    background-image: url(gambar/rusia.jfif);
+}
+.kartu5{
+    background-image: url(gambar/yunani.jpg);
+}
+.kartu6{
+    width: 500px;
+    height: 230px;
+    background-image: url(gambar/borobudur.jfif);
+}
+.kartu:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 30px;
+}
+.kartu p{
+    text-shadow: 0 0 15px #000;
+    font-size: 10px;
+}
+.airline{
+    width: 100%;
+    height: 60vh;
+    background-image: url(latar3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    margin: auto;
+    padding: 150px;
+    text-align: left;
+    position: relative;
+    color: #fff;
+}
+.content h4{
+    font-size: 40px;
+    font-family: calibri;
+}
+.content p{
+    font-size: 20px;
+    color: #fff;
+    font-family: calibri;
+    font-weight: 150;
+    line-height: 25px;   
+}
+.huruf {
+    padding: 30px;
+    text-align: center;
+    border: #999;
+    border-radius: 10%;
+}
+.ltr{
+    padding: 10px;
+    background-color: #e9ecef;   
+}
+.low{
+    margin: 0 150px 30px 150px;
+}
+.atas{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.atas img{
+    width: 90px;
+    height: 70px; 
+      
+}
+.bawah{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bawah img{
+    width: 70px;
+    height: 70px;
+     
+}
+.ltr h6{
+    padding: 60px 0 0 0;
+    font-size: 15px;
+    color: rgb(71, 70, 70);
+}
+.ltr p{
+    font-size: 14px;
+    color: rgb(71, 70, 70);
+}
+.bayar h2{
+    padding: 200px 0 10px 0;
+    color: rgb(67, 63, 63);
+}
+.atas1{
+    display: flex;
+    align-items: center;
+ 
+}
+.logobyr img{
+    width: 40px;
+    height: 20px;
+    padding: 0 10px;
+}
+
+.more{
+    padding: 50px 0;
+    margin: 0 150px 30px 150px;
+    display: flex;
+    justify-content: space-between;
+}
+.more h2{
+    color: rgb(108, 104, 104);
+    font-size: 18px;
+    padding: 10px 0;
+}
+.more p{
+    color: rgb(108, 104, 104);
+    font-size: 15px;
+    padding: 5px 0;
+}
+.more img{
+    width: 120px;
+    height: 60px;
+}
+.indo p{
+    font-size: 10px;
+}
+
+footer{
+    padding: 30px 0;
+    background-color: #fff;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.login{
+    width: 20%;
+    height: fit-content;
+    background-color: rgb(166, 165, 165);
+    padding: 20px;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+}
+
+.login a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999999999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0,0.4);
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.close{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+}
+.close:hover{
+    border: 3px solid rgb(54, 54, 54);
+    color: rgb(54, 54, 54);
+}
+
+
+@media screen and (max-width: 768px){
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 5px;
+        padding: 0 -2rem;
+        position: relative;
+    }
+    
+    .konten h1{
+        font-size: 20px;
+        margin-top: 50px;
+        padding-top: 7rem;
+    }
+
+    .konten p{
+        margin: 20px auto;
+        font-weight: 100;
+        line-height: 25px;  
+        text-align: justify;
+    }
+
+    .kartu1{
+        width: 200px;
+        height: 230px;
+        background-image: url(gambar/bandung.jpg);
+    }
+
+    .kartu6{
+        width: 200px;
+        height: 230px;
+        background-image: url(gambar/borobudur.jfif);
+    }
+
+    .atas img{
+        width: 70px;
+        height: 50px;   
+    }
+
+    .bawah img{
+        width: 50px;
+        height: 50px;  
+    }
+
+    .low{
+        margin: auto 0;
+    }
+
+    .logobyr img{
+        width: 15px;
+        height: 10px;
+        padding: 0 -1rem;
+    }
+
+    .more h2{
+        color: rgb(108, 104, 104);
+        font-size: 13px;
+        padding: 10px 0;
+    }
+    
+    .more img{
+        width: 60px;
+        height: 35px;
+    }
+
+    .more p{
+        color: rgb(108, 104, 104);
+        font-size: 9px;
+        padding: 5px 0;
+    }
+
+    .more{
+        padding: 50px 0;
+        margin: 0 80px 30px 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
